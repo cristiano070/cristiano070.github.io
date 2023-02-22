@@ -1,5 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-    var sww = require('./lib/sww.js');
+    var sww = require('./lib/sww.js.js');
     
     self.ServiceWorkerWare = sww.ServiceWorkerWare;
     self.StaticCacher = sww.StaticCacher;
@@ -306,9 +306,9 @@
     
     var debug = 1 ? console.log.bind(console, '[ServiceWorkerWare]') : function(){};
     
-    var StaticCacher = require('./staticcacher.js');
-    var SimpleOfflineCache = require('./simpleofflinecache.js');
-    var Router = require('./router.js');
+    var StaticCacher = require('./staticcacher.js.js');
+    var SimpleOfflineCache = require('./simpleofflinecache.js.js');
+    var Router = require('./router.js.js');
     
     var ERROR = 'error';
     var CONTINUE = 'continue';
